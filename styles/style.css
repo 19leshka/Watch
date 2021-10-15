@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -19,15 +20,13 @@
     box-sizing: border-box;
 }
 
-body{
-     /* Градиент */ 
+body{ 
     background: linear-gradient(to left bottom, #612c4a, #5b224c, #53194f, #481253, #380d58, #480a5a, #56055a, #64005a, #8a004f, #a50f3e, #b6362a, #bb590d) fixed;
 
     margin: 0;
     font-family: 'Gluten', cursive;
 
     font-size: 90px;
-    line-height: 1.6;
 }
 
 main{
@@ -41,54 +40,35 @@ main{
 
 
 .container{
-    display: block;
-
     width: 100%;
-    height: 100%;
-    max-width: 800px;
-    max-height: 70vh;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.time{
-    display: block;
+.page__inner{
     width: 100%;
-    margin: 100px auto;
-    margin-bottom: 25px;
+    max-width: 880px;
+    margin: 0 auto;
 
     text-align: center;
+}
 
+.time{
+    font-size: 90px;
     color: #fff;
 }
 
 .watches{
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 25px;
-
-    /* position: absolute; */
-
-    text-align: center;
-}
-
-.watches_inner{
+    margin-top: 30px;
     display: inline-flex;
-    text-align: center;
-    /* flex-direction: row; */
 }
 
-.t{
-    /* display: inline-flex; */
-    color: #fff
-}
+
 
 .circles{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    /* text-align: center; */
 }
 
 .circle{
@@ -103,7 +83,6 @@ main{
 .watches_item{
     padding: 20px 0;
     display: inline-flex;
-    text-align: center;
     margin: 0 10px;
 }
 
@@ -119,16 +98,16 @@ main{
     justify-content: center;
 }
 
-.hours,
-.minutes,
-.seconds{
-    margin: 0;
-    padding: 0;
+
+@media (max-width: 740px) {
+    .circles{
+        display: none;
+    }
 }
 
-.num{
-    display: inline-flex;
-    text-align: center;
-    color
-   
+@media (max-width: 660px) {
+    .watches{
+        display: inline-flex;
+        flex-direction: column;
+    }
 }
